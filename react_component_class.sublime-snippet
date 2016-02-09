@@ -1,13 +1,17 @@
 <snippet>
     <content><![CDATA[
-import React, { Component } from 'react';
+import React, { Component${1:, PropTypes }} from 'react';
 
-export default class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends Component {
+export default class ${2:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends Component {
+
+  ${3:static propTypes = {
+    ${4:children: PropTypes.any}
+  }};
 
 	render () {
-  
-		return ${2:(
-			${3:<div>${0}</div>}
+
+		return ${5:(
+			${6:<div>${7}</div>}
 		);}
 	}
 }

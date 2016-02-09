@@ -3,17 +3,14 @@
 import React from 'react';
 
 export default function ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} () {
-
-	render () {
   
-		return ${2:(
-			${3:<div>${0}</div>}
-		);}
-	}
+	return ${2:(
+		${3:<div>${0}</div>}
+	);}
 }
 
 ]]></content>
-    <tabTrigger>rcc</tabTrigger>
+    <tabTrigger>rfc</tabTrigger>
     <scope>source.js -(meta)</scope>
     <description>React: function component</description>
 </snippet>
